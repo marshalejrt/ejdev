@@ -809,6 +809,26 @@ https://www.freshdesignweb.com/vcard-resume-templates/
                 location.reload();
                 return false;
             });
+
+            $(document).ready(function() {
+                // Cargar el archivo de texto que contiene el contador
+                $.get("contador.txt", { "_": $.now() }, function(data) {
+                         
+                    // Incrementar el contador y guardar el valor en el archivo de texto con cada visita
+                    var contador = parseInt(data) + 1;
+                    $.ajax({
+                        type: "POST",
+                        url: "guardar-contador.php",
+                        data: 'contador='+contador,
+                        success: function(data) {
+                            //alert(data);
+                           console.log('SavedVisit '+contador);
+                        }
+                    });
+                    return false;                    
+                    });
+                });
+
         });
     </script>
     <!-- GOOGLE MAP -->
