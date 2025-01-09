@@ -1,7 +1,81 @@
 // http://sachinchoolur.github.io/lightGallery/docs/
 
-// GALLERY 1
+// GALLERY 0
 jQuery('#gallery1').on('click', function (e) {
+    "use strict";   
+    e.preventDefault();
+    
+    // Initialize the plugin
+    jQuery(this).lightGallery({
+        
+        // Settings
+        dynamic: true,
+        zoom: true,
+        fullScreen: true,
+        autoplay: false,
+        autoplayControls: true,
+        thumbnail: true,
+        download: true,
+        counter: true,
+        actualSize: true,
+        
+        // Images
+        dynamicEl: [{
+            'src': 'images/galeria/depingapp-0.jpg',
+            'thumb': 'images/galeria/depingapp-0.jpg',
+            'subHtml': "Splash Screen"
+        },{
+            // Image url
+            'src': 'images/galeria/depingapp-0.png',
+            // Thumbnail url
+            'thumb': 'images/galeria/depingapp-0.png',
+            // Title of the image
+            'subHtml': 'Pantalla de Acceso'
+        }, {
+            'src': 'images/galeria/depingapp-1.png',
+            'thumb': 'images/galeria/depingapp-1.png',
+            'subHtml': "Pantalla principal"
+        }, {
+            'src': 'images/galeria/depingapp-2.png',
+            'thumb': 'images/galeria/depingapp-2.png',
+            'subHtml': "Localización en tiempo real del pedido"
+        }, {
+            'src': 'images/galeria/depingapp-3.png',
+            'thumb': 'images/galeria/depingapp-3.png',
+            'subHtml': "Carrito de Compras"
+        }, {
+            'src': 'images/galeria/depingapp-4.png',
+            'thumb': 'images/galeria/depingapp-4.png',
+            'subHtml': "Chat Integrado"
+        }, {
+            'src': 'images/galeria/depingapp-5.png',
+            'thumb': 'images/galeria/depingapp-5.png',
+            'subHtml': "Pantalla principal - Tienda Online"
+        }, {
+            'src': 'images/galeria/depingapp-6.jpg',
+            'thumb': 'images/galeria/depingapp-6.jpg',
+            'subHtml': "Perfil de Usuario"
+        }, {
+            'src': 'images/galeria/depingapp-7.jpg',
+            'thumb': 'images/galeria/depingapp-7.jpg',
+            'subHtml': "Menú principal"
+        }, {
+            'src': 'images/galeria/depingapp-8.jpg',
+            'thumb': 'images/galeria/depingapp-8.jpg',
+            'subHtml': "Pasarela de Pagos"
+        }, {
+            'src': 'images/galeria/depingapp-9.jpg',
+            'thumb': 'images/galeria/depingapp-9.jpg',
+            'subHtml': "Valoración de Pedidos"
+        }]
+        
+    });
+    
+    return false;
+});
+
+// GALLERY 1
+jQuery('#gallery2').on('click', function (e) {
     "use strict";   
     e.preventDefault();
     
@@ -47,7 +121,7 @@ jQuery('#gallery1').on('click', function (e) {
 });
 
 // GALLERY 1
-jQuery('#gallery2').on('click', function (e) {
+jQuery('#gallery3').on('click', function (e) {
     "use strict";   
     e.preventDefault();
     
@@ -97,7 +171,7 @@ jQuery('#gallery2').on('click', function (e) {
 });
 
 // GALLERY 1
-jQuery('#gallery3').on('click', function (e) {
+jQuery('#gallery4').on('click', function (e) {
     "use strict";   
     e.preventDefault();
     
@@ -139,7 +213,7 @@ jQuery('#gallery3').on('click', function (e) {
 });
 
 
-jQuery('#gallery4').on('click', function (e) {
+jQuery('#gallery5').on('click', function (e) {
     "use strict";   
     e.preventDefault();
     
